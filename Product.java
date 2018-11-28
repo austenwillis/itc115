@@ -2,10 +2,10 @@ import java.util.*;
 import java.text.*;
 
 public class Product {
-	double price;
-	String code;
-	String description;
-	String name;
+	private double price;
+	private String code;
+	private String description;
+	private String name;
 	public static int count;
 
 	public Product(String productName, double productPrice, String productCode,
@@ -18,7 +18,14 @@ public class Product {
 		count++;
 
 	}
-
+	public String getDescription(){
+		return this.description;
+		}
+	
+	public void changeDescription(String newDescription) {
+		this.description = newDescription;
+	
+	}
 	public String getPriceFormatted() {
 		String formattedPrice = NumberFormat.getCurrencyInstance().format(this.price);
 		return formattedPrice;
