@@ -5,7 +5,8 @@ public class ProductMain {
 
 		Product car = new Product("car", 20000, "F3R32GH", "A brand new car!");
 		
-		car.changeDescription("2018 model car.");
+		car.setDescription("2018 model car!");
+		
 		System.out.println(car.toString());
 
 		Product table = new Product("table", 300.99, "76HHJH", "A large wooden table.");
