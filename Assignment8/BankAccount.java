@@ -5,9 +5,9 @@ public class BankAccount {
 	private double balance;
 	private double transactionFee = 0.00;
 	
-	public BankAccount(String accountName, double accountbalance, double accountTransFee) {
+	public BankAccount(String accountName, double accountBalance, double accountTransFee) {
 		name = accountName;
-		balance = accountbalance;
+		balance = accountBalance;
 		transactionFee = accountTransFee;
 	}
 	
